@@ -1,0 +1,27 @@
+name = "caspian-proxy"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+[env.production]
+name = "caspian-proxy"
+
+# KV Namespace برای ذخیره اطلاعات کاربران
+[[kv_namespaces]]
+binding = "KV_STORE"
+id = "YOUR_KV_NAMESPACE_ID"
+preview_id = "YOUR_PREVIEW_KV_NAMESPACE_ID"
+
+# متغیرهای محیطی
+[vars]
+APP_NAME = "CaspianProxy"
+APP_VERSION = "1.2.0"
+DEFAULT_UUID = "71dfe287-564f-4cbc-9ca0-99c7417341d2"
+
+# تنظیمات امنیتی
+[placement]
+mode = "smart"
+
+# Routes برای دامنه سفارشی
+[[routes]]
+pattern = "caspiantafars.lat/*"
+zone_name = "caspiantafars.lat"
