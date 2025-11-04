@@ -1,0 +1,27 @@
+{
+  "name": "caspian-proxy",
+  "version": "1.2.0",
+  "description": "Persian proxy management system with multi-user support and expiry dates",
+  "main": "src/index.js",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "tail": "wrangler tail",
+    "kv:create": "wrangler kv:namespace create KV_STORE",
+    "kv:list": "wrangler kv:key list --binding KV_STORE"
+  },
+  "keywords": [
+    "cloudflare",
+    "worker",
+    "proxy",
+    "vless",
+    "vmess",
+    "iran",
+    "persian"
+  ],
+  "author": "Caspian Team",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
