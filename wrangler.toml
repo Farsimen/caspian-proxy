@@ -8,7 +8,7 @@ name = "caspian-proxy"
 # KV Namespace برای ذخیره اطلاعات کاربران
 [[kv_namespaces]]
 binding = "KV_STORE"
-id = "YOUR_KV_NAMESPACE_ID"
+id = "a3298ab238594ba281109d415b7b13bd"
 preview_id = "YOUR_PREVIEW_KV_NAMESPACE_ID"
 
 # متغیرهای محیطی
